@@ -1,6 +1,4 @@
 import pygame
-import math
-import random
 import sys
 from collections import deque 
 from tkinter import messagebox, Tk 
@@ -18,7 +16,7 @@ w = width//cols
 h = height//rows 
 
 grid = []
-que, visited = deque(), []
+queue, visited = deque(), []
 path = []
 
 class Spot:
@@ -87,7 +85,6 @@ end = grid[cols - cols//2][rows - cols//4]
 start.wall = False
 end.wall = False
 
-queue = []
 queue.append(start)
 start.visited = True
 
